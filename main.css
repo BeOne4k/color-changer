@@ -9,14 +9,9 @@
 	background-color: #131313;
 	color: white;
 	border: none;
-
-
-
-
 }
 #hex:hover{
 	border-radius: 50px;
-
 }
 #main{
 	display:flex;
@@ -24,7 +19,6 @@
 	align-items: center;
 	height: 100vh;
 	flex-direction: column;
-
 }
 body{
 	overflow: hidden;
@@ -38,9 +32,9 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 22px;
-
-
+        transition: 0.5s;
 }
-#hex:hover + #top_text{
-	z-index: 2; 
+#hex:hover ~ #top_text{
+        transform: translate(-85px, -80px);
+        
 }
